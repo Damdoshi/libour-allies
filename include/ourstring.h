@@ -15,6 +15,7 @@
 # include	"efassert.h"
 
 size_t		our_strlen(const char	*str);
+int         our_printbase(int n, int base);
 
 #endif	/*	OURSTRING_H		*/
 
