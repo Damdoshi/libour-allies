@@ -15,6 +15,7 @@
 # include	"efassert.h"
 
 size_t		our_strlen(const char	*str);
+char        *our_strpbrk(char *string, char *searchedchar);
 
 #endif	/*	OURSTRING_H		*/
 
