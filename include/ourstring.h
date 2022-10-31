@@ -15,6 +15,7 @@
 # include	"efassert.h"
 
 size_t		our_strlen(const char	*str);
+char		*our_strstr(const char	*meule_de_foin, const char	*aiguille);
 
 #endif	/*	OURSTRING_H		*/
 
