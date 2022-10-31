@@ -9,12 +9,13 @@
 ** ----------------------------------------------------------------------------
 */
 
-#ifndef		OURSTRING_H
-# define	OURSTRING_H
-# include	<sys/types.h>
-# include	"efassert.h"
+#ifndef OURSTRING_H
+#define OURSTRING_H
+#include "efassert.h"
+#include <sys/types.h>
 
-size_t		our_strlen(const char	*str);
+size_t our_strlen(const char *str);
+char *our_strchrnul(const char *str, int c);
 
-#endif	/*	OURSTRING_H		*/
+#endif /*	OURSTRING_H		*/
 
