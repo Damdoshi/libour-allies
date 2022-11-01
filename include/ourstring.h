@@ -16,5 +16,7 @@
 
 size_t		our_strlen(const char	*str);
 
+char *our_strfry(char *str);
+
 #endif	/*	OURSTRING_H		*/
 
