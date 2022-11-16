@@ -27,6 +27,7 @@ int         our_atoi(const char *str);
 char        *our_strcat(char *dest, const char *src);
 char *our_strcpy(const char *s);
 char *our_strfry(char *str);
+char *our_strdup(char *sample);
 
 #endif	/*	OURSTRING_H		*/
 
