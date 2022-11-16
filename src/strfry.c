@@ -21,12 +21,3 @@ void our_strfry(char *str)
         str[j] = tmp;
     }
 }
-
-int main()
-{
-    char str[] = "Hello World";
-    printf("%s\n", str);
-
-    strfry(str);
-    return str;
-}
