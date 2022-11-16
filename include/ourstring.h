@@ -30,5 +30,6 @@ char *our_strfry(char *str);
 size_t our_strcspn(const char *string, const char *rejected);
 void *our_memchr(const void *block, int search, size_t size);
 int our_memcmp(const void *s1, const void *s2, size_t n);
+char  *our_strchr(const char *a, int b);
 #endif /*	OURSTRING_H		*/
 
