@@ -14,13 +14,14 @@
 #include "efassert.h"
 #include <sys/types.h>
 
-
+size_t		our_strlen(const char	*str);
+char * our_strtok_r(char *str, const char *delim, char **saveptr);
 int         our_strcmp(const char *s1, const char *s2);
-
 size_t our_strlen(const char *str);
 char *our_strchrnul(const char *str, int c);
 char *our_strndup(const char *s, size_t n);
 int         our_atoi(const char *str);
+
 
 #endif	/*	OURSTRING_H		*/
 
