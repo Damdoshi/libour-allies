@@ -14,6 +14,8 @@
 #include "efassert.h"
 #include <sys/types.h>
 
+long        our_strtol(const char *theString, char **end, int base); 
+
 
 char		*our_strstr(const char	*meule_de_foin, const char	*aiguille);
 
