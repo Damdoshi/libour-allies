@@ -16,6 +16,7 @@
 
 size_t		our_strlen(const char	*str);
 char        *our_strpbrk(char *string, char *searchedchar);
+char		*our_strncat(char *dest, char *src, int n);
 
 #endif	/*	OURSTRING_H		*/
 
