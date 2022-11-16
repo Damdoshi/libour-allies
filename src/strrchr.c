@@ -1,8 +1,7 @@
 #include "ourstring.h"
-#include <stdlib.h>
 
 int our_strrchr(char *string, char *cible) {
-    if (string == NULL || cible == NULL)
+    if (string == 0 || cible == 0)
         return 0;
     if (string == 0 || cible == 0 )
         return 0;
