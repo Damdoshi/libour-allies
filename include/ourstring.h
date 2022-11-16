@@ -16,7 +16,7 @@
 
 size_t		our_strlen(const char	*str);
 int         our_printbase(int n, int base);
-int         our_explode(const char *src, const char *tokens, char ***list, size_t *len);
+char        **our_explode(const char tokens, const char* str);
 
 #endif	/*	OURSTRING_H		*/
 
