@@ -17,5 +17,7 @@
 size_t our_strlen(const char *str);
 char *our_strchrnul(const char *str, int c);
 
-#endif /*	OURSTRING_H		*/
+int         our_atoi(const char *str);
+
+#endif	/*	OURSTRING_H		*/
 
