@@ -1,12 +1,20 @@
 #include "ourstring.h"
+#include <stdlib.h>
 
 int our_strrchr(char *string, char *cible) {
+    if (string == NULL || cible == NULL)
+        return 0;
     if (string == 0 || cible == 0 )
         return 0;
+    int lencible = our_strlen(cible);
+    if (lencible > 1)
+        return 0;
+
     int len = 0;
     int result = 0;
     int i = 0;
     int c = cible[0];
+
     
     while(string[len] != '\0')
         len++;
