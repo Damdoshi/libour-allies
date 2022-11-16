@@ -15,6 +15,10 @@
 #include <sys/types.h>
 
 
+
+size_t		our_strnlen(const char	*str,size_t	maxlen);
+
+
 int         our_strcmp(const char *s1, const char *s2);
 
 size_t our_strlen(const char *str);
