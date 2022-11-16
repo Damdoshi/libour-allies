@@ -15,6 +15,7 @@
 # include	"efassert.h"
 
 size_t		our_strlen(const char	*str);
+char		*our_strchr(const char *a, int b);
 
 #endif	/*	OURSTRING_H		*/
 
