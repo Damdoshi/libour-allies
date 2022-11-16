@@ -19,7 +19,7 @@ int our_pow(int base, int exp)
     return result;
 }
 
-float our_atof(char *string)
+double our_atof(char *string)
 {
     int start = 0;
     int neg = 1;
@@ -70,7 +70,7 @@ float our_atof(char *string)
         relatif = relatif + ((string[i] - 48) * our_pow(10, (h - i - 1)));
     }
 
-    float result = relatif;
+    double result = relatif;
 
     while (result >= 1)
     {
@@ -79,5 +79,5 @@ float our_atof(char *string)
 
     result += entier;
 
-    return result * neg;
+    return (result * neg);
 }

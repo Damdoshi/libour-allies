@@ -15,6 +15,6 @@
 #include "efassert.h"
 
 size_t our_strlen(const char *str);
-float our_atof(char *string);
+double our_atof(char *string);
 
 #endif /*	OURSTRING_H		*/
