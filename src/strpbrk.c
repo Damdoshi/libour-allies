@@ -5,6 +5,7 @@
 
 char * our_strpbrk(char *string, char *searchedchar)
 {
+    if ( NULL == string || NULL == searchedchar ) { return (NULL);}
     char *p;
     int i;
     for (i = 0; string[i] != '\0'; i++)
