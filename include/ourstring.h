@@ -14,7 +14,10 @@
 #include "efassert.h"
 #include <sys/types.h>
 
-size_t our_strlen(const char *str);
+
+size_t		our_strlen(const char	*str);
+int         our_printbase(int n, int base);
+char        **our_explode(const char tokens, const char* str);
 char *our_strchrnul(const char *str, int c);
 long our_strtol(const char *theString, char **end, int base);
 char *our_strstr(const char *meule_de_foin, const char *aiguille);
@@ -28,7 +31,6 @@ char *our_strcat(char *dest, const char *src);
 char *our_strcpy(const char *s);
 char *our_strfry(char *str);
 size_t our_strcspn(const char *string, const char *rejected);
-
 int our_strrchr(char *string, char *cible);
 void *our_memchr(const void *block, int search, size_t size);
 int our_memcmp(const void *s1, const void *s2, size_t n);
