@@ -1,13 +1,17 @@
-#include	<stdlib.h>
-#include	"ourstring.h"
+#include  <stdlib.h>
+#include  <string.h>
+#include  "ourstring.h"
 
-int	main(void){
-  assert(our_strstr("Hello World", "World") == "World");
-  assert(our_strstr("Hello World", "Hello") == "Hello World");
-  assert(our_strstr("Hello World", "Hello World") == "Hello World");
-  assert(our_strstr("Hello World", "Hello World!") == NULL);
-  assert(our_strstr("Hello World", "salut") == NULL);
-  assert(our_strstr("Hello World", "Hello World Hello World") == NULL);
+int main(void){
+  char  *str = "Hello World!";
+  char  *str2 = "World";
+  assert(our_strstr(str, str2) == str+6);
+  assert(our_strstr(str, "Hello") == str);
+  assert(our_strstr(str, "World!") == str+6);
+  assert(our_strstr(str, "World!!") == 0);
+  assert(our_strstr(str, "Hello World!") == str);
+  assert(our_strstr(0, "Hello World!!") == 0);
+  assert(our_strstr(str, 0) == 0);
+  assert(our_strstr(0, 0) == 0);
   return (EXIT_SUCCESS);
 }
-

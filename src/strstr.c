@@ -1,6 +1,10 @@
 #include "ourstring.h"  
 
 char *our_strstr(const char *meule_de_foin, const char *aiguille){
+
+    if (meule_de_foin == 0 || aiguille == 0)
+        return 0;
+
     int i, j, k;
     int len = our_strlen(meule_de_foin);
     int len2 = our_strlen(aiguille);
