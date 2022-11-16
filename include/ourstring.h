@@ -15,8 +15,11 @@
 # include	"efassert.h"
 
 size_t		our_strlen(const char	*str);
+<<<<<<< HEAD
 char        *our_strpbrk(char *string, char *searchedchar);
 char		*our_strncat(char *dest, char *src, int n);
+=======
+>>>>>>> parent of 85965b0 (strpbrk)
 
 #endif	/*	OURSTRING_H		*/
 
