@@ -25,7 +25,7 @@ char *our_strchrnul(const char *str, int c);
 char *our_strndup(const char *s, size_t n);
 int our_atoi(const char *str);
 char *our_strcat(char *dest, const char *src);
-char *our_strcpy(const char *s);
+char *our_strcpy(char *dest, const char *src);
 char *our_strfry(char *str);
 size_t our_strcspn(const char *string, const char *rejected);
 void *our_memchr(const void *block, int search, size_t size);
