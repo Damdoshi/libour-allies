@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "ourstring.h"
 
 char *our_strcpy(const char *s)
