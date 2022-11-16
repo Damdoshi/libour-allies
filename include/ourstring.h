@@ -16,6 +16,6 @@
 
 size_t		our_strlen(const char	*str);
 char        *our_strcat(char *dest, const char *src);
-
+void *our_memcpy(void *dest, const void *src, size_t size);
 #endif	/*	OURSTRING_H		*/
 
