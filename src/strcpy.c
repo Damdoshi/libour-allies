@@ -1,15 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "ourstring.h"
 
-char *our_strcpy(const char *s)
+
+char *our_strcpy(char *dest, const char *src)
 {
-    if(s == NULL){
-        return NULL;
+    if (src == NULL||dest == NULL){
+        return 0;
     }
-    char *d = malloc(sizeof(s));
-    for(int i = 0; i < our_strlen(s); i++) {
-        d[i] = s[i];
-    }
-    return d;
+    char *save = dest;
+    while(*dest++ = *src++);
+    return save;
 }
