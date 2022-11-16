@@ -28,6 +28,7 @@ char *our_strcat(char *dest, const char *src);
 char *our_strcpy(const char *s);
 char *our_strfry(char *str);
 size_t our_strcspn(const char *string, const char *rejected);
+void *our_memcpy(void *dest, const void *src, size_t size);
 int our_memcmp(const void *s1, const void *s2, size_t n);
 #endif /*	OURSTRING_H		*/
 
