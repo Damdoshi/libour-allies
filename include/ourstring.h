@@ -28,5 +28,6 @@ char *our_strcat(char *dest, const char *src);
 char *our_strcpy(const char *s);
 char *our_strfry(char *str);
 size_t our_strcspn(const char *string, const char *rejected);
+void *our_memset(void *pointer, int value, size_t count);
 #endif /*	OURSTRING_H		*/
 
